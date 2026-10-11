@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Teal Castle Co</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="site-header"></div>
+<main>
+  <section class="page-hero" data-content-src="/api/content/contact">
+    <h1 data-field="heading">Contact Teal Castle Co</h1>
+    <div data-field="body">
+      <p>Have a question, looking for a specific item, or want to sell something? We'd love to hear from you.</p>
+    </div>
+  </section>
+  <section class="form-section">
+    <form id="contactForm" class="contact-form">
+      <label>
+        Request Type
+        <select name="request_type">
+          <option>Question</option>
+          <option>Find an Item</option>
+          <option>Sell an Item</option>
+        </select>
+      </label>
+      <label>
+        Name
+        <input type="text" name="name" required>
+      </label>
+      <label>
+        Email
+        <input type="email" name="email" required>
+      </label>
+      <label>
+        Message
+        <textarea name="message" rows="5" required></textarea>
+      </label>
+      <button type="submit" class="btn-primary">Send Message</button>
+      <p id="formStatus" class="form-status" hidden></p>
+    </form>
+  </section>
+</main>
+<div id="site-footer"></div>
+<script src="js/site.js"></script>
+<script src="js/content.js"></script>
+<script src="js/contact.js"></script>
+</body>
+</html>
